@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_images.css">
+    <link rel="stylesheet" href="theme.css">
+    <script src="cart.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <p>
+            <a href="cart.html">
+                <img src="cart.jpg" height="50px" alt="cart" id="set">
+            </a>
+        </p>
+    
+        <ul id="nav_bar">
+            <li id="web">Horologe</li>
+            <nav>
+                <li><a href="about.html" class="nav_link">About</a></li>
+                <li><a href="index.html" class="nav_link">Home</a></li>
+                <li><a href="index.html" class="nav_link">Feature</a></li>
+                <li><a href="#contact" class="nav_link">Contact</a></li>
+            </nav>
+        </ul>
+    </header>
+        <h1>Your cart</h1>
+        <table id="table" border="3px"> 
+        <tr>
+            <th id="ima">Product</th>
+            <th>Item no</th>
+            <th>Product price</th>
+            <th>Qty.</th>
+            <th>Price</th>
+        </tr>
+        
+        <tr>
+            <th colspan="4">Total bill</th>
+            <th><input type="number" class="nos" readonly placeholder="0"     id="Total bill"></th>
+        </tr>
+    </table>
+    
+    <button id="clearCartButton" style="background-color: rgb(154, 57, 22); color: beige; border-radius: 15px; padding: 7px 15px 7px 15px; margin-bottom: 20px;">Clear Cart</button>
+
+    <div>
+        <h1>Personal Information</h1>
+        <div>
+            <label for="class">&nbsp;&nbsp;&nbsp;Name:</label>
+            <input type="text" id="name" class="data" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="phone">&nbsp;&nbsp;Phone:</label>
+            <input type="number" class="data" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div>
+            <label for="email">&nbsp;&nbsp;&nbsp;Email:</label>
+            <input type="text" class="data" id="email" placeholder="Enter your Email address">
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" class="data" id="address" placeholder="Enter delivery address">
+        </div>
+
+    </div>
+    <button id="button" class="button" style="padding: 7px 15px 7px 15px;background-color: rgb(154, 57, 22); color: beige; ">Confirm Order  
+    </button>
+    <p>Note: All payments will be on delivery.</p>
+    <div>
+        <input type="textarea" id="feedback" placeholder="Enter your Feedback">
+        <button id="submitFeedbackButton" style="background-color: rgb(154, 57, 22); color: beige; border-radius: 5px; padding: 5px 10px;">Submit Feedback</button>
+    </div>
+    <footer id="contact">
+        <h1>Contact Us</h1>
+        <h3>Email</h3>
+    
+        <p class="name">Atta ul wadood</p>
+        <p class="mail">f250733@cfd.nu.edu.pk</p>
+    
+        <p class="name">Faris Ahmed Tayyab</p>
+        <p class="mail">f240755@cfd.nu.edu.pk</p>
+    
+        <p class="name">Abdul Hadi</p>
+        <p class="mail">f240755@cfd.nu.edu.pk</p>
+    </footer>
+</body>
+</html>
